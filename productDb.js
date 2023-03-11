@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const connectDB = require('./db/connect'); 
-const Product = require('./models/products');
+const Train = require('./models/products');
 
 
 data  = require('./data.json');
@@ -8,8 +8,8 @@ data  = require('./data.json');
 const start = async () => {
     try {
         await connectDB();
-        await Product.deleteMany({});
-        await Product.create(data);
+        await Train.deleteMany({});
+        await Train.create(data);
         console.log("here")
     }catch (error) {
         console.log(error);

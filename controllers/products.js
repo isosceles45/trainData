@@ -1,8 +1,10 @@
-const Product = require('../models/products');
+const Train = require('../models/products');
 
 const getAllProducts = async (req, res) => {
-    const myData = await Product.find(req.query);
+    console.log("object")
+    const myData = await Train.find(req.query);
     console.log(req.query)
+    console.log(myData)
     res.status(200).json({
        myData
     })

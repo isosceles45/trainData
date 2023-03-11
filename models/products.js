@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const TrainSchema = new mongoose.Schema(
+const trainSchema = new mongoose.Schema(
   {
     "geometry": {
       "type": {
@@ -84,7 +84,4 @@ const TrainSchema = new mongoose.Schema(
 
 )
 
-module.exports = mongoose.model('Train', TrainSchema);
-
-
-
+module.exports = mongoose.model('Train', trainSchema);
